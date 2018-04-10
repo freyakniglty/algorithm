@@ -8,7 +8,7 @@
 
 当保留需要的几何特征时去除不需要的噪点和不平整的边界。
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/1.png)
 
 
 
@@ -74,9 +74,9 @@ $X^{n+1} = (I+\lambda dt L)X^n$
 
 $(I-\lambda dtL)X^{n+1} = X^n$
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/2.png)
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/3.png)
 
 
 
@@ -92,7 +92,7 @@ $A = I-\lambda dtL$ 是一个稀疏矩阵。
 
 可以考虑把$X^{n+1} = (I+\lambda dt L)X^n$  中的L 换成 $L^2,L^3,L^4$
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/4.png)
 
 
 
@@ -130,7 +130,7 @@ $V = \frac{1}{6}\sum^{nbFaces}_{k=1} g_k.N_k$
 
 前面用到的umbrella operator （伞算子），对于高频率的和低平率有相同的拉普拉斯近似。如下图：
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/5.png)
 
 
 
@@ -148,7 +148,7 @@ $dt \le \frac{min(|e|)^2}{2\lambda}$
 
 **1D 热力方程：** $x_t = x_{uu}$
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/6.png)
 
 上图指出，如果在边界上没有妥当地处理，会产生噪声造成非常大的误差。
 
@@ -174,7 +174,7 @@ $L(x_i) = \frac{2}{E}\sum_{j\in N_1(i)} \frac{x_j-x_i}{e_{ij}}$   （11）
 
 但是这个算子不再是线性的了，但是在光滑的过程中，边的长度并不会有太大的改变。我们就可以近似地得到系数矩阵 $A = (I-\lambda dtL)$ 保持不变在一个积分步骤内。
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/7.png)
 
 
 
@@ -210,7 +210,7 @@ $ \frac{\nabla A}{2A} = \bar{\kappa} n $
 
 这里 A是一个在顶点的小区域的面积。
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/8.png)
 
 得到一个离散的表达通过微分：
 
@@ -218,7 +218,7 @@ $-\bar\kappa n = \frac{1}{4A}\sum_{j\in N_1(i)}(\cot \alpha_j + \cot\beta_j)(x_j
 
 如下图：
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/9.png)
 
 其中A是以$x_i$ 为公共顶点的区域的面积之和。
 
@@ -236,7 +236,7 @@ $(\bar\kappa n)_{normalized} = \frac{1}{\sum_j(\cot \alpha^l_j+\cot \alpha^r_j)}
 
 **结果图对比：**
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/10.png)
 
 
 
