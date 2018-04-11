@@ -10,19 +10,19 @@
 
 **术语**：
 
-$d(p,S^`)=\min_{p^`\in S^`}d(p,p^`)$
+$d(p,S^{\prime})=\min_{p^{\prime}\in S^{\prime}}d(p,p^{\prime})$
 
-这里 $d(p,p^`)$ 是欧氏距离
+这里$d(p,p^{\prime})$  是欧氏距离
 
 **几何距离**，也叫 ***one-sided ,single-sided Hausdorff distance*** 在两个曲面之间被定义为：
 
-$d(S,S^`)=\max_{p\in S}d(p,S^`)$
+$d(S,S^{\prime})=\max_{p\in S}d(p,S^{\prime})$
 
-注意，这个距离并不是对称的 即 $d(S,S^`) \ne d(S^`,S)$
+注意，这个距离并不是对称的 即 $d(S,S^{\prime}) \ne d(S^{\prime},S)$
 
 ***symmetrical* *Hausdorff distance*** 被定义为：
 
-$，d_s(S,S^`) =max(d(S,S^`) ， d(S^`,S))$
+$，d_s(S,S^{\prime}) =max(d(S,S^{\prime}) ， d(S^{\prime},S))$
 
 
 
@@ -40,7 +40,7 @@ $，d_s(S,S^`) =max(d(S,S^`) ， d(S^`,S))$
 
 网格(grid)的规格依赖于bounding boxes 和三角形的个数。我们平均让十个三角形组成一个单元。
 
-得到分辨率 **$r = \sqrt{\frac { \# triangles}{10*6} }$**
+得到分辨率 $r = \sqrt{\frac { \# triangles}{10*6} }$
 
 为了给找到大的距离的体元加速，可以用八叉树（octree）结构
 
