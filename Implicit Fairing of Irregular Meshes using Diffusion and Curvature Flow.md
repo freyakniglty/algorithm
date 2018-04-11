@@ -156,7 +156,7 @@ $dt \le \frac{min(|e|)^2}{2\lambda}$
 
 extension of finite difference：(有限差分)
 
-$ x_{uu} = \frac{2}{\delta +\Delta}(\frac{x_{i-1}-x_i}{\delta}+\frac{x_{i+1}-x_i}{\Delta})$
+$ (x_{uu}) = \frac{2}{\delta +\Delta}(\frac{x_{i-1}-x_i}{\delta}+\frac{x_{i+1}-x_i}{\Delta})$
 
 当$\delta = \Delta$ 则得到usual finite difference（一般的有限差分）
 
