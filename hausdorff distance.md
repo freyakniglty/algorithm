@@ -40,7 +40,7 @@ $，d_s(S,S^{\prime}) =max(d(S,S^{\prime}) ， d(S^{\prime},S))$
 
 网格(grid)的规格依赖于bounding boxes 和三角形的个数。我们平均让十个三角形组成一个单元。
 
-得到分辨率 $r = \sqrt {\frac {{#triangles}}{10*6} }$
+得到分辨率 $r = \sqrt {\frac {\mbox{#triangles}}{10*6} }$
 
 为了给找到大的距离的体元加速，可以用八叉树（octree）结构
 
