@@ -113,7 +113,7 @@ return minError
 
 在三角形的三个顶点被计算完毕之后，三角形的最小几何距离就是$||V_i - P_i||$ 的最大值。三角形的最大几何距离是 顶点距离和B到 $P_i$ 的距离 的最大值。
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/h1.png)
 
 得到：
 
@@ -127,7 +127,7 @@ $ d \le \min^3_{i=1}(\max^3_{j=1}(||V_i - P_j||))$
 
 如果三个顶点的最近点落在同一个三角形上，最大顶点距离就是现在的三角形的几何距离。不然三角形就放入priority queue，（它的顶点落在不同的三角形上）。当它被处理时，被分成几块来处理。为了避免重复计算，将分好的子三角形放入priority queue而不是原三角形。
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/h2.png)
 
 ```c++
 CalculateSubdivisionBasePoints
@@ -150,10 +150,10 @@ for(allChildTriangles)
 
 没有必要计算精确的几何距离误差，只要设立阈值，只考虑修正超过阈值的部分即可。
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/h3.png)
 
 先计算quadric error （二次误差）。
 
 新顶点到简化的模型的距离误差超出hausdorff距离的两倍，就拒绝。然后再计算新顶点到原始模型的距离误差，如果超出一个特定的阈值，则拒绝。如下图。
 
-![]()
+![](https://github.com/freyakniglty/algorithm/blob/master/images/h4.png)
