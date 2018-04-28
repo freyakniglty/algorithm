@@ -59,7 +59,7 @@ $\Delta E=[\Delta r^T \Delta t^T] C\begin{bmatrix}\Delta r\\\Delta t\end{bmatrix
 
 为了更稳定，可以将C表示为它的特征向量和它的特征值。如果特征值很小，相应的特征向量定义了一个变换，如果移动（并非到最佳位置）两个网格产生的误差也会很小。
 
-![2](https://github.com/freyakniglty/algorithm/blob/master/images/icp1.jpg)
+![2](https://github.com/freyakniglty/algorithm/blob/master/images/icp2.jpg)
 
 所以需要识别不稳定的旋转和平移，看有没有特征能更好地约束不稳定的变换，然后对这样的特征进行取样。
 
