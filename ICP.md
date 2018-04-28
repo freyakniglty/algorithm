@@ -41,7 +41,7 @@ $\Delta d_i = [\Delta r^T \Delta t^T]\begin{bmatrix}p_i\times n_i\\n_i\end{bmatr
 
 这里x是一个6x1的变换参数，b是一个残差向量，C是对于每个点的一个6x6的关于扭转力和平移力的协方差矩阵。
 
-$C = FF^T = \begin{bmatrix}p_1\times n_1&...&p_k\times n_k\\n_1&...&n_k\end{bmatrix}\begin{bmatrix}(p_1 \times n_1)^T &n_1^T\\...&...\\(p_k\times n_k)^T&n_k^T\end{bmatrix}$   (2)
+$C = FF^T = \begin{bmatrix}p_1\times n_1&...&p_k\times n_k\\ n_1&...&n_k\end{bmatrix}\begin{bmatrix}(p_1 \times n_1)^T &n_1^T\\...&...\\(p_k\times n_k)^T&n_k^T\end{bmatrix}$   (2)
 
 
 
