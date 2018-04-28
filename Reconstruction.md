@@ -22,7 +22,7 @@
 
 一个重建交互系统：
 
-![1]()
+![1](https://github.com/freyakniglty/algorithm/blob/master/images/r1.jpg)
 
 
 
